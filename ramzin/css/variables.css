@@ -1,0 +1,12 @@
+:root {
+    --bg: #05020a;
+    --card: #151313;
+    --text: #9aa2a9;
+    --accent: #e83b3b;
+    --white: #ffffff;
+    --radius: 14px;
+    --container: 1200px;
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Poppins", sans-serif;
+  }
+  

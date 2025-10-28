@@ -1,0 +1,65 @@
+/* Reset default spacing and set box model */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Body: background, font, and text style */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body-font);
+  line-height: 1.6;
+}
+
+/* Links: accent color with no underline */
+a { color: var(--accent); text-decoration: none; }
+
+/* Headings: use main font and white color */
+h1, h2, h3, h4 { font-family: var(--heading-font); color: var(--white); }
+
+/* Container: centers content with padding */
+.container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
+
+/* Primary button style */
+.btn-primary {
+  background: var(--accent);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  display: inline-block;
+}
+
+/* Outline button with border */
+.btn-outline {
+  border: 2px solid var(--accent);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover: invert colors and lift effect */
+.btn-primary:hover,
+.btn-outline:hover {
+  background: var(--white);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+.btn-outline:hover {
+  border-color: var(--white);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade-in effect for images */
+img {
+  transition: opacity 0.3s ease;
+}
+
+/* Basic section positioning */
+section {
+  position: relative;
+}
